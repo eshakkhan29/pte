@@ -2,26 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* swiper slider custom button CSS start */
+.swiper-pagination-bullet {
+  background-color: transparent !important;
+  border: 2px solid black !important;
+  width: 12px !important;
+  height: 12px !important;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+  width: 12px !important;
+  height: 12px !important;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.swiper-pagination {
+  display: flex;
+  top: 40% !important;
+  justify-content: start !important;
+  /* top: 330px !important; */
 }
+/* swiper slider custom button CSS END */
